@@ -1,0 +1,14 @@
+* デプロイ
+  - $ cd captore-logbo
+  - $ pip install requests -t .
+  - $ pip install beautifulsoup4 -t .
+  - $ zip -r ../captore-logbo.zip .
+
+* 環境変数
+  - USER
+  - PASS
+  - DISCORD_ID_TOKEN
+
+* cron
+  - cron(0 14 * * ? *)
+    - 9 時間前を設定する (上記なら 23:00 に発火)
